@@ -54,9 +54,10 @@ $requser = $bdd->prepare('SELECT * FROM article WHERE id_article = ?');
 	              		<p style='font-size: 20px'><?php echo $donnees['caracteristique']; ?></p>
                   <h5>Stock disponible : <?php echo $donnees['stock']; ?></h5>
 
-<?php
+
 
 	             	<?php echo"<a class='btn btn-primary' href='requete_panier.php?article=".$donnees["id_article"]."'>Ajoutez au panier</a>";?>
+
             	</div>
     		</div>
 
