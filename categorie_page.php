@@ -47,7 +47,7 @@ $getid = htmlspecialchars($_GET['id_categorie']);
 
         <div class="col-md-2 col-sm-3">
           <div class="nav-gche">
-          <h3 id="titre"> CATEGORIES</h3>
+          <h3 id="titre">SOUS-CATEGORIES</h3>
           <?php
 $messages = $bdd->query('SELECT * FROM sous_categorie WHERE id_categorie = '.$_GET['id_categorie'].' ');
                   

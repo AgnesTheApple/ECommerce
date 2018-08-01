@@ -46,6 +46,16 @@ include("includes/top_nav.php");
   </div>
 </div>
 
+<!-- <div class="footer">
+
+  
+    <p><a href="https://github.com/AgnesTheApple" target="_blank">Mentions Legales</a></p>
+    <p><a href="https://github.com/AgnesTheApple" target="_blank">CGU</a></p>
+    <p><a href="https://github.com/AgnesTheApple" target="_blank">CGV</a></p>
+</div> -->
+    
+   
+
 <?php
 include("includes/footer.php");
 ?>

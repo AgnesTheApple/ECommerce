@@ -1,6 +1,7 @@
 body {
 	background-color: #F1F1F2;
 	font-family: 'Dosis', sans-serif;
+	
 }
 
 .jumbotron {
@@ -58,4 +59,27 @@ h1 {
     transform: scale(1.3);
 }
 
+/*.footer {
+	position: fixed;
+  bottom: 0;
+  left: 0; 
+  height: 60px;
+  width: 100%;
+  background-color: #676767;
+  color: white;
+  text-align: center;
+  
+  animation-duration: 4s;
+	animation-name: fade;
+}
 
+.footer p {
+	font-size: 20px;
+	margin : 0px;
+	padding-top: 15px;
+	padding-right: 15px;
+	display: inline-block;
+}
+
+
+*/
