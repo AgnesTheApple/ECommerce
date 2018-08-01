@@ -32,7 +32,7 @@ h1 {
 	width: 800px;
 }
 
-.container-fluid img {
+#cat {
 	width: 200px;
 	height: 150px;
 	border-radius: 12px;
@@ -42,9 +42,20 @@ h1 {
 	margin: auto;
 	border: none;
 	width: 200px;
-	height: 150px;
+	height: 158px;
 	margin-bottom: 50px;
 
+}
+
+#cat {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#cat:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 

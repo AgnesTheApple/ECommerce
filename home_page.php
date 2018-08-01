@@ -2,7 +2,7 @@
 include("includes/header.php");
 
 ?>
-
+    
     <link rel="stylesheet" type="text/css" href="css/home_page.css">
     
   </head>
@@ -35,7 +35,7 @@ include("includes/top_nav.php");
 
       <div class="col-lg-4 col-sm-6">
         <?php echo"<a class='thumbnail' href='categorie_page.php?id_categorie=".$donnees["id_categorie"]."'>";?>
-          <img src="pictures/<?php echo $donnees['image_categorie']; ?>"/>
+          <img id="cat" src="pictures/<?php echo $donnees['image_categorie']; ?>"/>
         </a>
       </div>
 <?php 

@@ -49,6 +49,7 @@ $getid = htmlspecialchars($_GET['id_categorie']);
           <div class="nav-gche">
           <h3 id="titre"> CATEGORIES</h3>
           <?php
+
 $messages = $bdd->query('SELECT * FROM sous_categorie WHERE id_categorie = '.$_GET['id_categorie'].' ');
                   
                   while($donnees = $messages->fetch()){
@@ -75,7 +76,8 @@ $messages = $bdd->query('SELECT * FROM sous_categorie WHERE id_categorie = '.$_G
         	<div class="row flex">
 <!-- Articles -->
                 <?php
-$categorie = $bdd->query('SELECT * FROM article INNER JOIN categorie ON categorie.id_categorie = article.id_categorie WHERE article.id_categorie = '.$_GET['id_categorie'].' ');
+    $getidsous = htmlspecialchars($_GET['id_sous_categorie']);
+$categorie = $bdd->query('SELECT * FROM article INNER JOIN sous_categorie ON sous_categorie.id_sous_categorie = article.id_sous_categorie WHERE article.id_sous_categorie = '.$_GET['id_sous_categorie'].' ');
                   
                   while($donnees = $categorie->fetch()){
                   ?>

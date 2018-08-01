@@ -1,6 +1,5 @@
 <?php
 include("includes/header.php");
-
 ?>
 
     <link rel="stylesheet" type="text/css" href="css/panier.css">
@@ -13,9 +12,7 @@ include("includes/header.php");
 include("includes/top_nav.php");
 ?>
 
-<?php
-include("includes/footer.php");
-?>
+
 
 	<div class="container-fluid">
 		<h1>Votre Panier</h1>
@@ -37,7 +34,8 @@ include("includes/footer.php");
 
   					<tbody>
 		          <tr>
-		            <th scope="row">1</th>
+		            <th scope="row"></th>
+
 		            <td></td>
 		            <td></td>
 		            <td></td>
@@ -53,6 +51,7 @@ include("includes/footer.php");
 					</table>
     		</div>
   		</div>
+  		<?php echo $donnees['nom_article']; ?>
 
 			<div class="col-md-4 ">
     		<div class="recap">
@@ -78,3 +77,7 @@ include("includes/footer.php");
 		</div>
 
 	</div>
+
+<?php
+include("includes/footer.php");
+?>
