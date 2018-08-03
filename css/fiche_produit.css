@@ -64,4 +64,18 @@ h1 {
 	flex-wrap: wrap;
 }
 
+#titre {
+	padding-top: 35px;
+    padding-left: 6px;
+	font-size: 35px;
+    font-family: 'Cabin Sketch', cursive;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+}
 
+.cat {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}

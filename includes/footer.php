@@ -5,8 +5,8 @@
 <div class="footer">
 
   
-   <p><a href="https://github.com/AgnesTheApple" target="_blank">Mentions Legales / CGU et CGV</a></p>
-    <p><a href="https://github.com/AgnesTheApple" target="_blank">Equipe et Contact</a></p>
+   <p><a href="cgv.php" target="_blank">Mentions Legales / CGU et CGV</a></p>
+    <p><a href="contact.php" target="_blank">Equipe et Contact</a></p>
 
     <p id="copy"><i class="far fa-copyright"></i>My Travel Stuff</p>
 </div>

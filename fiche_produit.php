@@ -11,6 +11,8 @@ include("includes/header.php");
 <?php
 include("includes/top_nav.php");
 ?>
+
+
 <!-- fin NAVBAR -->
 
 	<div class="container-fluid">
@@ -25,7 +27,21 @@ include("includes/top_nav.php");
 
     		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 ">
           		<div class="nav-gche">
-          			<h3 id="titre"> CATEGORIES</h3>
+          			<h3 id="titre">SOUS-CATEGORIES</h3>
+              <?php
+$messages = $bdd->query('SELECT * FROM sous_categorie WHERE id_categorie = '.$_GET['id_categorie'].' ');
+                  
+                  while($donnees = $messages->fetch()){
+                  ?>
+
+                  <li class="cat">
+            <ul><?php echo "<a href='sous_categorie_page.php?id_sous_categorie=".$donnees["id_sous_categorie"]."&id_categorie=".$donnees["id_categorie"]."'>".$donnees["nom_sous_categorie"]."</a>";?></ul>
+           
+          </li>
+          <?php 
+               } 
+                
+                ?>
           		</div>
         	</div>
     	
@@ -54,9 +70,7 @@ $requser = $bdd->prepare('SELECT * FROM article WHERE id_article = ?');
 	              		<p style='font-size: 20px'><?php echo $donnees['caracteristique']; ?></p>
                   <h5>Stock disponible : <?php echo $donnees['stock']; ?></h5>
 
-
-
-	             	<?php echo"<a class='btn btn-primary' href='requete_panier.php?article=".$donnees["id_article"]."'>Ajoutez au panier</a>";?>
+                  <?php echo "<a class='btn btn-primary' href='requete_panier.php?id_article=".$donnees["id_article"]."&ajouter=".$donnees["id_article"]."'>Ajouter au panier</a>";?>
 
             	</div>
     		</div>

@@ -47,7 +47,7 @@ $getid = htmlspecialchars($_GET['id_categorie']);
 
         <div class="col-md-2 col-sm-3">
           <div class="nav-gche">
-          <h3 id="titre"> CATEGORIES</h3>
+          <h3 id="titre">SOUS-CATEGORIES</h3>
           <?php
 
 $messages = $bdd->query('SELECT * FROM sous_categorie WHERE id_categorie = '.$_GET['id_categorie'].' ');
@@ -55,7 +55,7 @@ $messages = $bdd->query('SELECT * FROM sous_categorie WHERE id_categorie = '.$_G
                   while($donnees = $messages->fetch()){
                   ?>
         
-          <li>
+          <li class="cat">
             <ul><?php echo "<a href='sous_categorie_page.php?id_sous_categorie=".$donnees["id_sous_categorie"]."&id_categorie=".$donnees["id_categorie"]."'>".$donnees["nom_sous_categorie"]."</a>";?></ul>
            
           </li>
@@ -83,7 +83,7 @@ $categorie = $bdd->query('SELECT * FROM article INNER JOIN sous_categorie ON sou
                   ?>
 
       <div class="col-lg-4 col-sm-6">
-        <?php echo"<a class='thumbnail' href='fiche_produit.php?id_article=".$donnees["id_article"]."'>";?> 
+        <?php echo"<a class='thumbnail' href='fiche_produit.php?id_article=".$donnees["id_article"]."&id_categorie=".$donnees["id_categorie"]."'>";?> 
           <img src="photos/<?php echo $donnees['photo']; ?>" >
           <h4><?php echo $donnees['nom_article']; ?></h4>
           <h4><?php echo $donnees['prix']; ?> €</h4>

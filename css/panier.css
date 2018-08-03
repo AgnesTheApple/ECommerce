@@ -1,4 +1,5 @@
 body {
+	height: 100%;
 	background-color: #f2f2f2;
 	font-family: 'Dosis', sans-serif;
 	font-size: 20px;
@@ -15,3 +16,28 @@ h1 {
 	background-color: white;
 }
 
+.footer {
+    
+  margin-top: 200px;
+  height: 60px;
+  width: 100%;
+  background-color: #849974;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+    font-size: 20px;
+    margin : 0px;
+    padding-top: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+a{
+  color:black;
+}
+
+#copy {
+  display: block;
+  float: right;
+}

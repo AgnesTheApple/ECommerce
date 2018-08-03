@@ -1,0 +1,33 @@
+body {
+	background-color: #F1F1F2;
+	font-family: 'Dosis', sans-serif;
+	
+}
+
+h1 {
+     font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-weight: bold;
+   
+}
+h4 {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 23px;
+}
+
+.map {
+    text-align: center;
+    
+}
+
+.formulaire {
+    text-align: center;
+}
